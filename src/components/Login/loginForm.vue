@@ -45,6 +45,7 @@
     <p for="Password" class="form__label"></p>
   </div>
 </template>
+
 <script>
 import axios from "axios";
 
@@ -59,7 +60,7 @@ export default {
     };
   },
   created() {
-    console.log(localStorage.email);
+    
     if (localStorage.email) {
       this.$router.push("/main");
     }
